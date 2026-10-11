@@ -1,0 +1,5 @@
+.choice-current { -fx-color: #d4d4d4; }
+.choice-future { -fx-text-fill: #6a6a6a; -fx-label-padding: 0 2 0 0; }
+.choice-dummy { -fx-background-color: transparent; -fx-border-width: 0; }
+.choice { -fx-background-radius: 4; -fx-border-radius: 4; }
+.choice-empty { -fx-background-color: #2d2d30; }

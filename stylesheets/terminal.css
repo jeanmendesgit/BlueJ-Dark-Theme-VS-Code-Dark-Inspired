@@ -1,0 +1,139 @@
+/*
+.terminal .virtual-flow {
+    -fx-gravity: rear;
+}
+*/
+.terminal-split {
+    -fx-orientation: vertical;
+    -fx-background-color: #1e1e1e;
+}
+
+/* ===== FUNDO GERAL ===== */
+.terminal-split,
+.terminal-split > .split-pane-divider,
+.terminal-split .scroll-pane,
+.terminal-split .scroll-pane .viewport,
+.terminal-split .scroll-pane .content,
+.terminal-split .scroll-pane > .corner {
+    -fx-background-color: #1e1e1e;
+}
+
+/* ===== TEXTFLOW ===== */
+.terminal,
+.terminal-error,
+.terminal .text-flow,
+.terminal .paragraph-box,
+.terminal .content {
+    -fx-background-color: #1e1e1e;
+}
+
+/* ===== TEXTO ===== */
+.terminal-output { -fx-fill: #d4d4d4; }
+.terminal-input { -fx-fill: #569cd6; }
+.terminal-method-record { -fx-fill: #ce9178; }
+.terminal-error { -fx-fill: #f48771; }
+.terminal-stack-link {
+    -fx-fill: #f48771;
+    -rtfx-underline-color: #f44747;
+    -rtfx-underline-width: 2;
+    -fx-cursor: hand;
+}
+.terminal-stack-foreign { -fx-fill: #6a6a6a; }
+
+/* ===== CAMPO DE ENTRADA ===== */
+.terminal-input-field {
+    -fx-prompt-text-fill: #6a6a6a;
+    -fx-text-fill: #d4d4d4;
+    -fx-background-color: #252526;
+    -fx-border-color: #3e3e42;
+    -fx-border-width: 1 0 0 0;
+}
+
+/* ===== BARRAS DE ROLAGEM ===== */
+.terminal-split .scroll-bar:vertical,
+.terminal-split .scroll-bar:horizontal {
+    -fx-background-color: #1e1e1e;
+}
+.terminal-split .scroll-bar .thumb {
+    -fx-background-color: #424242;
+    -fx-background-radius: 4;
+}
+.terminal-split .scroll-bar .thumb:hover { -fx-background-color: #4f4f4f; }
+.terminal-split .scroll-bar .increment-button,
+.terminal-split .scroll-bar .decrement-button { -fx-background-color: transparent; }
+.terminal-split .scroll-bar .increment-arrow,
+.terminal-split .scroll-bar .decrement-arrow { -fx-background-color: #858585; }
+
+/* ===== LABEL E MENU ===== */
+.terminal .label { -fx-text-fill: #d4d4d4; }
+.terminal-split .menu-bar,
+.terminal-split .menu-bar .menu { -fx-background-color: #323233; }
+.terminal-split .menu-bar .menu .label { -fx-text-fill: #d4d4d4; }
+.terminal-split .menu-bar .menu:hover,
+.terminal-split .menu-bar .menu:showing { -fx-background-color: #0e639c; }
+
+/* ============================================================
+   ===== TEXTAREA NATIVO (o bloco branco do terminal) =====
+   O TextArea do Modena ignora -fx-background-color. Precisamos
+   sobrescrever -fx-control-inner-background e a cor do texto.
+   ============================================================ */
+
+.terminal .text-area,
+.text-area.terminal,
+TextArea.terminal {
+    -fx-control-inner-background: #1e1e1e;
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #d4d4d4;
+    -fx-highlight-fill: #264f78;
+    -fx-highlight-text-fill: #ffffff;
+    -fx-prompt-text-fill: #6a6a6a;
+}
+
+/* O "content" interno do TextArea (onde o texto aparece) */
+.terminal .text-area .content,
+.text-area.terminal .content {
+    -fx-background-color: #1e1e1e;
+}
+
+/* O ScrollPane interno do TextArea */
+.terminal .text-area .scroll-pane,
+.terminal .text-area .scroll-pane .viewport,
+.terminal .text-area .scroll-pane .content,
+.text-area.terminal .scroll-pane,
+.text-area.terminal .scroll-pane .viewport,
+.text-area.terminal .scroll-pane .content {
+    -fx-background-color: #1e1e1e;
+}
+
+/* O texto em si (Text nodes dentro do TextArea) */
+.terminal .text-area .text,
+.text-area.terminal .text {
+    -fx-fill: #d4d4d4;
+}
+
+/* Scrollbars internas do TextArea */
+.terminal .text-area .scroll-bar,
+.text-area.terminal .scroll-bar {
+    -fx-background-color: #1e1e1e;
+}
+.terminal .text-area .scroll-bar .thumb,
+.text-area.terminal .scroll-bar .thumb {
+    -fx-background-color: #424242;
+    -fx-background-radius: 4;
+}
+.terminal .text-area .scroll-bar .thumb:hover,
+.text-area.terminal .scroll-bar .thumb:hover {
+    -fx-background-color: #4f4f4f;
+}
+
+.terminal-split *,
+.terminal *,
+.text-area.terminal * {
+    -fx-background-color: #1e1e1e !important;
+    -fx-control-inner-background: #1e1e1e !important;
+}
+
+/* Restaura o input field (que deve ter cor levemente diferente) */
+.terminal-input-field {
+    -fx-background-color: #252526 !important;
+}

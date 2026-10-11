@@ -1,0 +1,46 @@
+.editor-menubar {
+    -fx-font-size: 14;
+    -fx-font-family: "Segoe UI", System;
+    -fx-background-color: #323233;
+}
+.editor-menubar .menu .label { -fx-text-fill: #d4d4d4; }
+.editor-menubar .menu:hover,
+.editor-menubar .menu:showing {
+    -fx-background-color: #0e639c;
+}
+
+.line-numbers-context-menu {
+    -fx-font-size: 14;
+    -fx-font-family: "Segoe UI", System;
+}
+
+/* Menus de contexto — versão final */
+.context-menu {
+    -fx-background-color: #252526 !important;
+    -fx-border-color: #3e3e42 !important;
+    -fx-border-width: 1 !important;
+    -fx-border-radius: 4 !important;
+    -fx-background-radius: 4 !important;
+    -fx-padding: 4 0 4 0 !important;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 8, 0, 0, 3) !important;
+}
+.menu-item {
+    -fx-background-color: transparent !important;
+    -fx-padding: 4 12 4 12 !important;
+}
+.menu-item .label {
+    -fx-text-fill: #d4d4d4 !important;
+}
+.menu-item:focused {
+    -fx-background-color: #094771 !important;
+}
+.menu-item:focused .label {
+    -fx-text-fill: #ffffff !important;
+}
+.menu-item:disabled .label {
+    -fx-text-fill: #6a6a6a !important;
+}
+.context-menu .separator .line {
+    -fx-border-color: #3e3e42 transparent transparent transparent !important;
+    -fx-border-width: 1 0 0 0 !important;
+}

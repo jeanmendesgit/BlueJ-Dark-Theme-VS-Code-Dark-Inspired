@@ -1,0 +1,79 @@
+.root { suggestion-background: #252526; }
+
+.suggestion-list {
+    -fx-background-color: suggestion-background;
+    -fx-padding: 2 0 0 0;
+    -fx-border-color: #3e3e42;
+    -fx-border-width: 1;
+    -fx-border-style: solid outside;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 8, 0, 0, 3);
+    -bj-pref-width: 25em;
+    -bj-type-width: 5em;
+}
+.suggestion {
+    -fx-padding: 0 2 0 0;
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-text-fill: #d4d4d4;
+}
+.suggestion-cell { -fx-padding: 0; -fx-background-color: transparent; }
+.suggestion-prefix, .suggestion-matching, .suggestion-next, .suggestion-suffix {
+    -fx-label-padding: 0 -2 0 0;
+}
+.suggestion-matching, .suggestion-type:bj-match { -fx-underline: true; -fx-text-fill: #569cd6; }
+.suggestion-next { -fx-font-weight: bold; }
+.suggestion-button-hint {
+    -fx-font-size: 75%;
+    -fx-border-color: #4e4e52;
+    -fx-border-radius: 2;
+    -fx-label-padding: 1;
+    -fx-background-color: transparent;
+    -fx-background-radius: 2;
+    -fx-text-fill: #858585;
+}
+.suggestion:bj-suggestion-highlight { -fx-background-color: #094771; }
+
+.suggestion-similar-heading {
+    -fx-label-padding: 2 0 2 20;
+    -fx-background-color: #2d2d30;
+    -fx-text-fill: #858585;
+    -fx-border-color: transparent;
+    -fx-border-width: 5 0 2 0;
+}
+.suggestion:bj-suggestion-similar .label { -fx-text-fill: #6a6a6a; }
+.suggestion-none { -fx-label-padding: 10 20 10 20; -fx-text-fill: #858585; }
+
+.suggestion-javadoc, .suggestion-file-preview {
+    -fx-background-color: #2d2d30;
+    -fx-background-radius: 0 6 6 0;
+    -fx-border-color: #3e3e42;
+    -fx-border-width: 1;
+    -fx-border-radius: 0 6 6 0;
+    -fx-border-style: solid outside;
+}
+.suggestion-file-preview { -fx-padding: 20 20 20 20; }
+.suggestion-javadoc .web-view {
+    -fx-font-smoothing-type: gray;
+    -fx-content-menu-enabled: false;
+}
+.suggestion-list-scroll-pane:focused {
+    -fx-background-color: -fx-box-border, -fx-box-border, -fx-background !important;
+}
+.suggestion-more-label {
+    -fx-text-fill: #858585;
+    -fx-background-color: transparent;
+    -fx-font-style: italic;
+    -fx-padding: 3;
+    -fx-wrap-text: true;
+}
+.suggestion-more-label-pane {
+    -fx-background-color: #252526;
+    -fx-border-width: 1 0 1 0;
+    -fx-border-color: #3e3e42 transparent #3e3e42 transparent;
+    -fx-border-style: solid inside;
+}
+.suggestion-more-label-pane:bj-at-top {
+    -fx-border-width: 1 0 1 0;
+    -fx-border-color: #3e3e42 transparent #3e3e42 transparent;
+}
+.suggestion-top-level { -fx-padding: 1; }

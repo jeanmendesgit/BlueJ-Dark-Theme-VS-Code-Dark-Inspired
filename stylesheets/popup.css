@@ -1,0 +1,21 @@
+.java-error { -fx-font-family: "Segoe UI", "Source Sans Pro", sans-serif; -fx-fill: #d4d4d4; }
+.java-error-popup {
+    -fx-background-color: #3a1a1a;
+    -fx-padding: 4px 8px 4px 8px;
+    -fx-background-radius: 6px;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.5), 6, 0.3, 2, 2);
+    -fx-border-color: #f44747;
+    -fx-border-radius: 6px;
+}
+.kotlin-unavailable-popup {
+    -fx-background-color: #2d2d30;
+    -fx-padding: 5px 10px 5px 10px;
+    -fx-background-radius: 6px;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.5), 6, 0.3, 2, 2);
+    -fx-border-color: #3e3e42;
+    -fx-border-radius: 6px;
+}
+.kotlin-unavailable-popup .kotlin-unavailable-label {
+    -fx-font-family: "Segoe UI", "Source Sans Pro", sans-serif;
+    -fx-text-fill: #d4d4d4;
+}

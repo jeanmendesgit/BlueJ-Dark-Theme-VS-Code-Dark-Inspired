@@ -1,0 +1,37 @@
+.frame-editor-key-help-pane {
+    -fx-background-color: #2d2d30;
+    -fx-background-radius: 10;
+    -fx-padding: 10 10 10 0;
+    -fx-vgap: 4;
+    -fx-hgap: 10;
+    -fx-border-color: #3e3e42;
+    -fx-border-radius: 10;
+}
+
+.frame-editor-key-help-pane .label {
+    -fx-text-fill: #d4d4d4;
+}
+
+.frame-editor-key-help-pane .keyboard-key {
+    -fx-border-color: #569cd6;
+    -fx-border-radius: 4;
+    -fx-background-color: transparent;
+    -fx-min-width: 1.5em;
+    -fx-min-height: 1.5em;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-text-fill: #569cd6;
+}
+
+.frame-tooltip {
+    -fx-text-fill: #d4d4d4;
+    -fx-background-color: rgba(45, 45, 48, 0.95);
+    -fx-background-radius: 10;
+    -fx-padding: 10 10 10 10;
+    -fx-border-color: #3e3e42;
+    -fx-border-radius: 10;
+}
+.frame-tooltip:bj-tight-border {
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+}

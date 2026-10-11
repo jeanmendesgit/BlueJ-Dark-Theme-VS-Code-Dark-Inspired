@@ -1,0 +1,9 @@
+.selection-highlight, .birdseye-selection {
+    -fx-arc-height: 7;
+    -fx-arc-width: 7;
+    -fx-stroke: #0e639c;
+    -fx-stroke-width: 2;
+    -fx-fill: transparent;
+}
+.selection-highlight-normal { -fx-fill: transparent; }
+.selection-highlight-delete { -fx-fill: rgba(244, 71, 71, 0.5); }

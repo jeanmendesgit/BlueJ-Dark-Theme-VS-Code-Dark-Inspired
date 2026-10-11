@@ -1,0 +1,90 @@
+.moe-top-bar {
+    -fx-padding: 0.75em 1em 0.75em 1em;
+    -fx-background-color: #1e1e1e, #1e1e1e;
+    -fx-background-insets: 0 0 0 0, 0 0 1 0;
+}
+
+.moe-top-bar-buttons { -fx-hgap: 0.5em; }
+.moe-top-bar-buttons > .button { -fx-label-padding: 0 0.3em 0 0.3em; }
+
+.moe-bottom-bar {
+    -fx-background-color: #1e1e1e, #1e1e1e;
+    -fx-background-insets: 0 0 0 0, 1 0 0 0;
+}
+
+.moe-bottom-status-row { -fx-padding: 0.3em 0.5em 0.3em 0.5em; }
+
+.moe-status-label-wrapper {
+    -fx-border-style: solid inside;
+    -fx-border-color: #3e3e42;
+    -fx-border-width: 0 0 0 1;
+}
+.moe-status-label-wrapper:bj-status-error { -fx-cursor: hand; }
+.moe-status-label-wrapper .label {
+    -fx-font-family: "Segoe UI", "Source Sans Pro", sans-serif;
+    -fx-font-style: italic;
+    -fx-text-fill: #858585;
+    -fx-label-padding: 0 8 0 8;
+    -fx-text-alignment: center;
+    -fx-min-width: 5em;
+    -fx-alignment: top-center;
+}
+.moe-status-label-wrapper .error-count-label {
+    -fx-font-style: normal;
+    -fx-text-fill: #f48771;
+    -fx-underline: true;
+}
+.moe-info { -fx-font-family: "Segoe UI", "Source Sans Pro", sans-serif; }
+.moe-info-text { -fx-fill: #858585; }
+
+.moe-find-panel {
+    -fx-padding: 0.5em 1em 0.5em 1em;
+    -fx-border-style: solid inside;
+    -fx-border-color: #3e3e42;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-insets: 0 5 0 5;
+    -fx-background-color: #2d2d30;
+}
+.moe-find-label { -fx-alignment: center-right; -fx-text-alignment: right; }
+.moe-find-panel .button { -fx-label-padding: 0 0.5em 0 0.5em; }
+.moe-find-options { -fx-spacing: 3em; }
+.moe-find-grid { -fx-vgap: 0.5em; -fx-hgap: 0.5em; }
+
+.moe-line-label {
+    -fx-font-size: 11px;
+    -fx-alignment: center-right;
+    -fx-graphic-text-gap: 0;
+    -fx-label-padding: 0 6 0 0;
+    -fx-background-color: #1e1e1e, #1e1e1e;
+    -fx-text-fill: #858585;
+}
+.moe-editor-pane:bj-printing:bj-line-numbers .moe-line-label {
+    -fx-alignment: top-right;
+    -fx-label-padding: 4 2 0 0;
+}
+.moe-editor-pane:bj-printing:bj-line-numbers .moe-line-label { -fx-font-size: 4pt; }
+.moe-editor-pane:bj-screen .moe-line-label,
+.moe-editor-pane:bj-printing:bj-line-numbers .moe-line-label {
+    -fx-min-width: 40; -fx-pref-width: 40; -fx-max-width: 40;
+    -fx-background-insets: 0 0 0 0, 0 1 0 0;
+}
+.moe-editor-pane:bj-printing .moe-line-label {
+    -fx-min-width: 0; -fx-pref-width: 0; -fx-max-width: 0;
+    -fx-background-color: white; -fx-background-insets: 0;
+}
+.moe-editor-pane:bj-uncompiled .moe-line-label {
+    -fx-background-color: #1e1e1e, #2d2d30;
+    -fx-background-insets: -1 0 -1 0, -1 1 -1 0;
+}
+.moe-line-label:bj-breakpoint, .moe-line-label:bj-step-mark { -fx-label-padding: 0; }
+.moe-editor-pane:bj-uncompiled .moe-line-label:bj-error {
+    -fx-background-color: #f48771;
+}
+.moe-editor-pane { -fx-caret-blink-rate: 0s; }
+.moe-background { -fx-background-color: #1e1e1e; }
+.moe-code-error { }
+.moe-find-field:bj-no-find-result { -fx-text-fill: #f48771; }
+.moe-editor-pane:bj-screen .moe-bracket-highlight {
+    -rtfx-background-color: #3a3d41;
+}
+.moe-step-mark-icon { -fx-stroke-width: 1; -fx-stroke-type: outside; }

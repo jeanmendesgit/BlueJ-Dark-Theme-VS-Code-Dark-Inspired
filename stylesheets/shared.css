@@ -1,0 +1,22 @@
+.stop-icon .octagon { -fx-fill: #f44747; }
+.stop-icon .label { -fx-text-fill: #1e1e1e; -fx-font-size: 6px; }
+.stop-icon:bj-large .octagon { -fx-stroke: #1e1e1e; -fx-stroke-type: inside; -fx-stroke-width: 1; }
+.stop-icon:bj-large .label { -fx-font-size: 10px; }
+
+/* editor-error-bar.css */
+.error-overview-bar-pane {
+    -fx-min-width: 15px;
+    -fx-border-width: 0 0 0 1px;
+    -fx-border-color: #3e3e42;
+    -fx-background-color: #252526;
+}
+.error-overview-bar-status {
+    -fx-font-size: 14px;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #3e3e42;
+}
+.error-overview-bar-status:bj-success { -fx-text-fill: #4ec9b0; -fx-cursor: default; }
+.error-overview-bar-status:bj-failure { -fx-text-fill: #f44747; -fx-cursor: hand; }
+.error-overview-bar-status:bj-editing { -fx-text-fill: #dcdcaa; -fx-cursor: default; }
+.error-overview-error { -fx-fill: #f48771; -fx-stroke: #f44747; -fx-cursor: hand; }
+.error-overview-error:bj-showing { -fx-fill: #f44747; }

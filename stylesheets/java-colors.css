@@ -1,0 +1,98 @@
+/* ============================================================
+   ===== VS Code Dark+ Syntax Colors =====
+   ===== Paleta aplicada por token do BlueJ =====
+   ============================================================ */
+
+/* --- Types: class, interface, enum --- */
+.token-keyword1 {
+    -fx-fill: #4ec9b0;
+}
+
+/* --- Control Flow: if, else, for, while, return, break ---
+       (também captura true/false/null — limitação do BlueJ) --- */
+.token-keyword2 {
+    -fx-fill: #c586c0;
+}
+
+/* --- Modificadores e tipos: public, private, static, String, int, void --- */
+.token-keyword3 {
+    -fx-fill: #4ec9b0;
+}
+
+/* --- Comentários --- */
+.token-comment-normal {
+    -fx-fill: #6a9955;
+}
+.token-comment-javadoc {
+    -fx-fill: #608b4e;
+}
+.token-comment-special {
+    -fx-fill: #dcdcaa;
+}
+
+/* --- Primitivos / constantes --- */
+.token-primitive {
+    -fx-fill: #4fc1ff;
+}
+
+/* --- Números (e chars) --- */
+.token-char-literal {
+    -fx-fill: #b5cea8;
+}
+
+/* --- Strings --- */
+.token-string-literal {
+    -fx-fill: #ce9178;
+}
+
+/* --- Variáveis, parâmetros, nomes de métodos --- */
+.token-label {
+    -fx-fill: #9cdcfe;
+}
+
+/* --- Texto inválido --- */
+.token-invalid {
+    -fx-fill: #f44747;
+}
+
+/* --- Texto padrão: operadores, pontuação, resto --- */
+.token-default {
+    -fx-fill: #d4d4d4;
+}
+
+/* ============================================================
+   ===== Escopo / overlays de debug =====
+   ============================================================ */
+.scope-colors {
+    -bj-background-color: #252526;
+    -bj-class-color: #252526;
+    -bj-class-outer-color: #2c2c2f;
+    -bj-class-inner-color: #252526;
+    -bj-method-color: #252526;
+    -bj-method-outer-color: #2c2c2f;
+    -bj-selection-color: #252526;
+    -bj-selection-outer-color: #2c2c2f;
+    -bj-iteration-color: #252526;
+    -bj-iteration-outer-color: #2c2c2f;
+    -bj-breakpoint-overlay-color: rgba(244, 135, 113, 0.35);
+    -bj-step-overlay-color: rgba(78, 201, 176, 0.35);
+}
+
+.moe-step-mark-icon {
+    -fx-fill: #4ec9b0;
+    -fx-stroke: #1e1e1e;
+}
+
+.moe-editor-pane {
+    -fx-background-color: #1e1e1e;
+    -fx-highlight-fill: #264f78;
+}
+
+.moe-find-result {
+    -rtfx-background-color: #515c6a;
+}
+
+.moe-editor-pane .caret,
+.caret {
+    -fx-stroke-width: 1 !important;
+}

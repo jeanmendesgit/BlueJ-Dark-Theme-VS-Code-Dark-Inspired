@@ -1,0 +1,30 @@
+.tabbed-editor > .tab-header-area > .tab-header-background {
+    -fx-background-color: #1e1e1e;
+}
+
+.tabbed-editor > .tab-header-area .tab {
+    -fx-border-width: 0 0 2 0;
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: #1e1e1e;
+    -fx-background-radius: 0;
+    -fx-text-fill: #858585;
+}
+.tabbed-editor > .tab-header-area .tab:hover {
+    -fx-background-color: #37373d;
+}
+.tabbed-editor > .tab-header-area .tab:selected {
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: #0e639c;
+    -fx-text-fill: #ffffff;
+}
+.tabbed-editor > .tab-header-area .bj-tab-error .tab-label {
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #f44747;
+}
+.tabbed-editor > .tab-header-area .moe-tab:selected {
+    -fx-background-color: #1e1e1e !important;
+    -fx-border-color: transparent !important;
+}
+.tabbed-editor > .tab-header-area { -fx-padding: 2 5 -1 5; }
+
+.tabbed-editor .tab-close-button:hover { -fx-background-color: #f44747; }
