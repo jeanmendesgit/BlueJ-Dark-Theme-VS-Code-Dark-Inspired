@@ -10,13 +10,7 @@ Um tema escuro para o **BlueJ** inspirado na paleta **VS Code Dark+**. Feito par
 
 ## 📸 Preview
 
-> _Adicione aqui screenshots do tema em ação:_
->
-> - Editor de código com syntax highlighting
-> - Diagrama de classes
-> - Debugger
-> - Terminal
-> - Object Bench
+<img src="interface.png" alt="Descrição" width="300" height="200"> <img src="editor.png" alt="Descrição" width="300" height="200"> <img src="terminal.png" alt="Descrição" width="300" height="200">
 
 ---
 
